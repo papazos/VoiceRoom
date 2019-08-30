@@ -1,4 +1,5 @@
-﻿const botconfig = require("./botconfig.json");
+require('dotenv').config(); 
+const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({ disableEveryone: true });
 
@@ -232,4 +233,4 @@ bot.on('guildUpdate', (oldGuild, newGuild) => {
 
 });
 
-bot.login('NjEwNjY3MjkzODY5MDgwNTg2.XWJfIA.Vb5jv6uP7rSufKcYH2gSd5o9y94');
+bot.login();
